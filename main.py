@@ -1,10 +1,18 @@
 import customtkinter as ctk
 import requests
+import time
 import os
 API_KEY = r"Enter your own! Can't share API Keys sorry."
 
 ctk.set_appearance_mode("dark")
 from dotenv import load_dotenv
+
+load_dotenv()
+
+
+
+API_KEY = os.getenv('API_KEY')
+
 
 
 
